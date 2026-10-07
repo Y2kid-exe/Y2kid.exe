@@ -1,15 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  height: 100vh;
-  background: radial-gradient(circle, #1a1a1a, #000);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% 20%, #3a3f44 0%, #111315 45%, #050505 100%);
+  color: #d8dce0;
+  font-family: "Courier New", monospace;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   BOOT SCREEN
+========================= */
+
+#boot {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #cfd2d6;
-  font-family: "Courier New", monospace;
-  letter-spacing: 2px;
+
+  background: #050505;
+  color: #d9dde1;
+
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 
-#boot {
-  font-size: 20px;
+.boot-text {
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 15px #8fa3b5;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+#main {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  padding: 40px 0 100px;
+
+  opacity: 0;
+
+  animation: showPage 1s ease forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes showPage {
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 20px;
+
+  border: 1px solid #666;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.12),
+    rgba(255,255,255,0.02)
+  );
+
+  box-shadow:
+    inset 0 0 20px rgba(255,255,255,0.04),
+    0 0 20px rgba(0,0,0,0.8);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+
+  color: #e7e9eb;
+
+  text-shadow:
+    0 0 5px #fff,
+    0 0 15px #778899;
+}
+
+.status {
+  font-size: 12px;
+  color: #aeb6bd;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  margin: 20px 0;
+}
+
+nav a,
+.links a {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  color: #cfd4d8;
+  text-decoration: none;
+
+  border: 1px solid #555;
+  background: linear-gradient(#2b2f33, #111315);
+
+  transition: 0.2s;
+}
+
+nav a:hover,
+.links a:hover {
+  color: white;
+
+  background: linear-gradient(#555b60, #22262a);
+
+  box-shadow:
+    0 0 10px rgba(180,200,220,0.4);
+}
+
+/* =========================
+   PANELS
+========================= */
+
+.panel {
+  margin-top: 25px;
+  padding: 30px;
+
+  min-height: 240px;
+
+  border: 1px solid #555;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.08),
+      rgba(0,0,0,0.35)
+    );
+
+  box-shadow:
+    inset 0 0 30px rgba(255,255,255,0.03),
+    0 10px 30px rgba(0,0,0,0.5);
+}
+
+.panel-title {
+  margin-bottom: 25px;
+
+  color: #9da8b0;
+
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+h1 {
+  margin: 0 0 20px;
+
+  font-size: clamp(35px, 7vw, 70px);
+  line-height: 0.95;
+
+  color: #e8eaec;
+
+  text-shadow:
+    2px 2px 0 #444,
+    0 0 15px rgba(200,220,240,0.25);
+}
+
+h2 {
+  color: #dfe3e6;
+}
+
+p {
+  color: #aeb5ba;
+  line-height: 1.8;
+}
+
+.small {
+  font-size: 12px;
+  color: #777f85;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  margin-top: 40px;
+
+  text-align: center;
+
+  font-size: 11px;
+  color: #555b60;
+}
+
+/* =========================
+   CRT / SCANLINES
+========================= */
+
+body::after {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.025) 0px,
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+
+  opacity: 0.35;
+
+  z-index: 10000;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  #main {
+    width: 94%;
+    padding-top: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+
 }
