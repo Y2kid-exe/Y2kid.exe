@@ -3,7 +3,7 @@ const boot = document.getElementById("boot");
 
 let count = 1;
 
-setInterval(() => {
+const dotAnimation = setInterval(() => {
   count++;
 
   if (count > 3) {
@@ -11,14 +11,19 @@ setInterval(() => {
   }
 
   dots.textContent = ".".repeat(count);
+
 }, 500);
 
-// Hide boot screen after loading
+
+// Boot sequence
 setTimeout(() => {
+
   boot.style.opacity = "0";
 
   setTimeout(() => {
+
     boot.style.display = "none";
-  }, 500);
+
+  }, 600);
 
 }, 2500);
