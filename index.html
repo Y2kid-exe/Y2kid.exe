@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Y2kid.exe</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div id="boot">
-  <span>SYSTEM BOOTING</span><span id="dots">.</span>
-</div>
+  <div id="boot">
+    <div class="boot-text">SYSTEM BOOTING<span id="dots">.</span></div>
+  </div>
 
-<script src="player.js"></script>
+  <main id="main">
+
+    <header>
+      <div class="logo">Y2kid.exe</div>
+      <div class="status">● SYSTEM ONLINE</div>
+    </header>
+
+    <nav>
+      <a href="#profile">PROFILE</a>
+      <a href="#music">MUSIC</a>
+      <a href="#links">LINKS</a>
+    </nav>
+
+    <section id="profile" class="panel">
+      <div class="panel-title">/// PROFILE</div>
+
+      <h1>WELCOME TO<br>Y2kid.exe</h1>
+
+      <p>
+        Welcome to my personal space.
+      </p>
+
+      <p class="small">
+        SYSTEM STATUS : ONLINE<br>
+        USER : HOJO<br>
+        ERA : 2000s
+      </p>
+    </section>
+
+    <section id="music" class="panel">
+      <div class="panel-title">/// MUSIC</div>
+
+      <h2>NOW PLAYING</h2>
+
+      <p>Music system initializing...</p>
+    </section>
+
+    <section id="links" class="panel">
+      <div class="panel-title">/// LINKS</div>
+
+      <div class="links">
+        <a href="#" target="_blank">INSTAGRAM</a>
+        <a href="#" target="_blank">X / TWITTER</a>
+        <a href="#" target="_blank">YOUTUBE</a>
+      </div>
+    </section>
+
+    <footer>
+      Y2kid.exe // 2000-2026
+    </footer>
+
+  </main>
+
+  <script src="player.js"></script>
+
 </body>
 </html>
