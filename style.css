@@ -847,28 +847,31 @@ footer {
 }
 
 /* =========================
-   KABISAT — GLOBAL FONT
+   KABISAT + READABLE TEXT
 ========================= */
 
 @font-face {
   font-family: "Kabisat";
   src: url("./Kabisat.ttf") format("truetype");
-  font-weight: 100 900;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
+/* ฟอนต์หลักสำหรับข้อความทั่วไป */
 html,
 body,
 button,
 input,
 textarea,
 select {
-  font-family: "Kabisat", sans-serif;
+  font-family: Arial, Tahoma, sans-serif;
 }
 
-*,
-*::before,
-*::after {
-  font-family: inherit;
+/* ใช้ Kabisat เฉพาะจุดที่ต้องการตกแต่ง */
+.logo,
+.boot-logo,
+.panel-title,
+nav a {
+  font-family: "Kabisat", Arial, sans-serif;
 }
