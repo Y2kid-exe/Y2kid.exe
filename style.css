@@ -908,8 +908,9 @@ button,
 input,
 textarea,
 select {
-  font-family: Arial, Tahoma, sans-serif;
+  font-family: 'PLANK', Arial, Tahoma, sans-serif;
 }
+
 
 /* ใช้ Kabisat เฉพาะจุดที่ต้องการตกแต่ง */
 .logo,
