@@ -921,3 +921,13 @@ select {
 nav a {
   font-family: "Kabisat", Arial, sans-serif;
 }
+
+/* =========================
+   PLANK - HEADINGS
+========================= */
+
+h1,
+h2,
+.panel-title {
+  font-family: 'PLANK', Arial, sans-serif;
+}
