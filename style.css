@@ -922,12 +922,22 @@ nav a {
   font-family: "Kabisat", Arial, sans-serif;
 }
 
+
 /* =========================
    PLANK - HEADINGS
 ========================= */
 
-h1,
-h2,
+h1 {
+  font-family: 'PLANK', Arial, sans-serif;
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-family: 'PLANK', Arial, sans-serif;
+  letter-spacing: 3px;
+}
+
 .panel-title {
   font-family: 'PLANK', Arial, sans-serif;
+  letter-spacing: 4px;
 }
