@@ -901,6 +901,7 @@ footer {
   font-display: swap;
 }
 
+
 /* ฟอนต์หลักสำหรับข้อความทั่วไป */
 html,
 body,
@@ -908,8 +909,9 @@ button,
 input,
 textarea,
 select {
-  font-family: 'PLANK', Arial, Tahoma, sans-serif;
+  font-family: 'Acidic', Arial, Tahoma, sans-serif;
 }
+
 
 
 /* ใช้ Kabisat เฉพาะจุดที่ต้องการตกแต่ง */
