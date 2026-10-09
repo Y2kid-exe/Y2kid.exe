@@ -1,3 +1,46 @@
+/* ===== Y2kid.exe - Custom Fonts ===== */
+
+@font-face {
+  font-family: 'PLANK';
+  src: url('./PLANK___.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acidic';
+  src: url('./Acidic.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chetkiy';
+  src: url('./CHETKIYTYPEFACE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chetkiy';
+  src: url('./CHETKIYTYPEFACEITALIC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Chetkiy OTF';
+  src: url('./CHETKIYTYPEFACE.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chetkiy Italic OTF';
+  src: url('./CHETKIYTYPEFACEITALIC.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
 * {
   box-sizing: border-box;
 }
