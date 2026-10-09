@@ -309,7 +309,7 @@ body::after {
 
   margin-bottom: 35px;
 
-  font-family: Arial, sans-serif;
+  font-family: 'PLANK', Arial, sans-serif;
 
   font-size: clamp(48px, 10vw, 90px);
 
@@ -600,7 +600,7 @@ header {
 
 .logo {
 
-  font-family: Arial, sans-serif;
+  font-family: 'PLANK', Arial, sans-serif;
 
   font-size: 30px;
 
